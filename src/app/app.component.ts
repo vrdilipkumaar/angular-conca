@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
+  
+  newUserFirst = '';
+  newUserLast = '';
+
+  users = [
+    { first: 'John', last: 'Doe' },
+    { first: 'Jane', last: 'Smith' }
+  ];
+
+  onAdd() {
+    this.users.push({
+      first: this.newUserFirst, last: this.newUserLast
+    });
+  }
 }

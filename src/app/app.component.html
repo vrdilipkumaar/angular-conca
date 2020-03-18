@@ -1,4 +1,7 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<input placeholder="First Name" [(ngModel)]="newUserFirst">
+<input placeholder="Last Name" [(ngModel)]="newUserLast">
+<button (click)="onAdd()">Add</button>
+
+<div *ngFor="let user of users">
+  {{user.first}} {{user.last}}
+</div>
