@@ -1,7 +1,7 @@
-<input placeholder="First Name" [(ngModel)]="newUserFirst">
-<input placeholder="Last Name" [(ngModel)]="newUserLast">
+<input placeholder="First Name" id="firstName" [(ngModel)]="newUserFirst">
+<input placeholder="Last Name" id="lastName" [(ngModel)]="newUserLast">
 <button (click)="onAdd()">Add</button>
 
 <div *ngFor="let user of users">
-  {{user.first}} {{user.last}}
+    {{user.first}} {{user.last}}
 </div>
