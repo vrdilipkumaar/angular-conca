@@ -11,7 +11,7 @@ export class AppComponent  {
   newUserLast = '';
 
   users = [
-    { first: 'John', last: 'Doe' },
+    { first: 'Dilip', last: 'Kumaar' },
     { first: 'Jane', last: 'Smith' }
   ];
 
